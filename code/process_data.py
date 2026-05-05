@@ -66,6 +66,32 @@ def main():
     df.to_csv(OUTPUT_PATH, index=False, encoding="utf-8-sig")
     print(f"\n[*] Saved processed data to {OUTPUT_PATH} ({len(df)} rows)")
 
+    print("\n\n" + "=" * 60)
+    print("GROUPBY ANALYSIS — Mean Synopsis Length by is_expensive")
+    print("=" * 60)
+    grouped = df.groupby("is_expensive")["Synopsis length"].mean()
+    for flag, mean_val in grouped.items():
+        label = "Expensive (> median)" if flag else "Not expensive (<= median)"
+        print(f"  {label:30s}  {mean_val:.2f}")
+    print("=" * 60)
+
+    df_sorted = df.sort_values("Price in NIS", ascending=False)
+    df_sorted.to_csv("output/books_sorted.csv", index=False, encoding="utf-8-sig")
+    print(f"\n[*] Saved sorted data to output/books_sorted.csv")
+
+    print("\n\n" + "=" * 60)
+    print("TOP 5 MOST EXPENSIVE BOOKS")
+    print("=" * 60)
+    top5 = df_sorted[["Title", "Price in NIS"]].head(5)
+    print(top5.to_string(index=False))
+
+    print("\n" + "=" * 60)
+    print("TOP 5 LEAST EXPENSIVE BOOKS")
+    print("=" * 60)
+    bottom5 = df_sorted[["Title", "Price in NIS"]].tail(5)
+    print(bottom5.to_string(index=False))
+    print("=" * 60)
+
 
 if __name__ == "__main__":
     main()
