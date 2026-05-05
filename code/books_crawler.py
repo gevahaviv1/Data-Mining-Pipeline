@@ -207,7 +207,8 @@ def parse_book_page(html_content: str) -> dict:
     title = _extract_title(soup)
     category = _extract_category(ficha)
     categories = _extract_categories(soup)
-    authors = ficha.get("Author")
+    raw_authors = ficha.get("Author")
+    authors = raw_authors.replace(";", ",") if raw_authors else None
     price_nis = _extract_price_nis(soup)
     price_usd = _convert_price_to_usd(price_nis)
     year = ficha.get("Year")
@@ -336,11 +337,33 @@ def main(max_pages: int = 5, max_categories: Optional[int] = None):
     df = pd.DataFrame(all_books_data)
     os.makedirs("output", exist_ok=True)
     df.to_csv("output/books_raw.csv", index=False, encoding="utf-8-sig")
-    df.to_json(
-        "output/books_raw.json", orient="records", indent=2, force_ascii=False,
-    )
+    _save_assignment_json(df, "output/books_raw.json")
     print(f"[*] Saved output/books_raw.csv  ({len(df)} rows)")
     print(f"[*] Saved output/books_raw.json ({len(df)} records)")
+
+    example = {k: v for k, v in all_books_data[0].items() if v is not None and v != ""}
+    with open("output/books_example.json", "w", encoding="utf-8") as jf:
+        json.dump(example, jf, indent=2, ensure_ascii=False)
+    print("[*] Saved output/books_example.json")
+
+
+def _strip_nulls(d: dict) -> dict:
+    """Remove keys whose values are None, NaN, or empty string."""
+    import math as _m
+    return {
+        k: v for k, v in d.items()
+        if v is not None and v != ""
+        and not (isinstance(v, float) and _m.isnan(v))
+    }
+
+
+def _save_assignment_json(df: pd.DataFrame, path: str) -> None:
+    """Export a DataFrame in the required {records: {record: [...]}} format,
+    dropping any keys with null / NaN / empty values per assignment rules."""
+    clean_rows = [_strip_nulls(row) for row in df.to_dict(orient="records")]
+    payload = {"records": {"record": clean_rows}}
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
 
 
 if __name__ == "__main__":
