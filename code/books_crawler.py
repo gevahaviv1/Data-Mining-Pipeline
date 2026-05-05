@@ -336,14 +336,34 @@ def main(max_pages: int = 5, max_categories: Optional[int] = None):
 
     df = pd.DataFrame(all_books_data)
     os.makedirs("output", exist_ok=True)
-    df.to_csv("output/books.csv", index=False, encoding="utf-8-sig")
-    records_json = {
-        "records": [{"record": row} for row in df.to_dict(orient="records")]
+    df.to_csv("output/books_raw.csv", index=False, encoding="utf-8-sig")
+    _save_assignment_json(df, "output/books_raw.json")
+    print(f"[*] Saved output/books_raw.csv  ({len(df)} rows)")
+    print(f"[*] Saved output/books_raw.json ({len(df)} records)")
+
+    example = {k: v for k, v in all_books_data[0].items() if v is not None and v != ""}
+    with open("output/books_example.json", "w", encoding="utf-8") as jf:
+        json.dump(example, jf, indent=2, ensure_ascii=False)
+    print("[*] Saved output/books_example.json")
+
+
+def _strip_nulls(d: dict) -> dict:
+    """Remove keys whose values are None, NaN, or empty string."""
+    import math as _m
+    return {
+        k: v for k, v in d.items()
+        if v is not None and v != ""
+        and not (isinstance(v, float) and _m.isnan(v))
     }
-    with open("output/books.json", "w", encoding="utf-8") as jf:
-        json.dump(records_json, jf, indent=2, ensure_ascii=False)
-    print(f"[*] Saved output/books.csv  ({len(df)} rows)")
-    print(f"[*] Saved output/books.json ({len(df)} records)")
+
+
+def _save_assignment_json(df: pd.DataFrame, path: str) -> None:
+    """Export a DataFrame in the required {records: {record: [...]}} format,
+    dropping any keys with null / NaN / empty values per assignment rules."""
+    clean_rows = [_strip_nulls(row) for row in df.to_dict(orient="records")]
+    payload = {"records": {"record": clean_rows}}
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
 
 
 if __name__ == "__main__":

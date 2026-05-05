@@ -6,10 +6,16 @@ REQUIRED_FILES = [
     "code/books_crawler.py",
     "code/process_data.py",
     "report.pdf",
-    "output/books.csv",
-    "output/books.json",
+    "output/books_raw.csv",
+    "output/books_raw.json",
+    "output/books_example.json",
+    "output/books_example.jpg",
+    "output/books_before_sort.csv",
+    "output/books_after_sort.csv",
     "output/books_processed.csv",
-    "output/books_sorted.csv",
+    "output/books_processed.json",
+    "output/books_processed_preview.csv",
+    "output/books_summary.csv",
 ]
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
