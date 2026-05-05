@@ -337,9 +337,11 @@ def main(max_pages: int = 5, max_categories: Optional[int] = None):
     df = pd.DataFrame(all_books_data)
     os.makedirs("output", exist_ok=True)
     df.to_csv("output/books.csv", index=False, encoding="utf-8-sig")
-    df.to_json(
-        "output/books.json", orient="records", indent=2, force_ascii=False,
-    )
+    records_json = {
+        "records": [{"record": row} for row in df.to_dict(orient="records")]
+    }
+    with open("output/books.json", "w", encoding="utf-8") as jf:
+        json.dump(records_json, jf, indent=2, ensure_ascii=False)
     print(f"[*] Saved output/books.csv  ({len(df)} rows)")
     print(f"[*] Saved output/books.json ({len(df)} records)")
 
