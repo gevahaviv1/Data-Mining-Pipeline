@@ -21,13 +21,13 @@ def add_num_authors(df: pd.DataFrame) -> pd.DataFrame:
         parts = [a.strip() for a in val.replace(",", ";").split(";")]
         return len([p for p in parts if p])
 
-    df["num_authors"] = df["Authors"].fillna("").apply(_count)
+    df["NumberOfAuthors"] = df["Authors"].fillna("").apply(_count)
     return df
 
 
 def add_is_expensive(df: pd.DataFrame) -> pd.DataFrame:
     median_price = df["Price in NIS"].median()
-    df["is_expensive"] = df["Price in NIS"] > median_price
+    df["IsExpensive"] = (df["Price in NIS"] > median_price).astype(int)
     print(f"Price in NIS median (threshold): {median_price:.2f}\n")
     return df
 
@@ -60,18 +60,27 @@ def main():
 
     print_summary_statistics(df)
 
-    print("\n\nVERIFICATION — first 5 rows:")
-    print(df[["Title", "num_authors", "Price in NIS", "is_expensive"]].head().to_string())
+    print("\n\nVERIFICATION — first 10 rows:")
+    preview = df.head(10)
+    print(preview[["Title", "NumberOfAuthors", "Price in NIS", "IsExpensive"]].to_string())
 
     df.to_csv(OUTPUT_PATH, index=False, encoding="utf-8-sig")
     print(f"\n[*] Saved processed data to {OUTPUT_PATH} ({len(df)} rows)")
 
+    df.to_json(
+        "output/books_processed.json", orient="records", indent=2, force_ascii=False,
+    )
+    print(f"[*] Saved output/books_processed.json ({len(df)} records)")
+
+    preview.to_csv("output/books_processed_preview.csv", index=False, encoding="utf-8-sig")
+    print(f"[*] Saved output/books_processed_preview.csv ({len(preview)} rows)")
+
     print("\n\n" + "=" * 60)
     print("GROUPBY ANALYSIS — Mean Synopsis Length by is_expensive")
     print("=" * 60)
-    grouped = df.groupby("is_expensive")["Synopsis length"].mean()
+    grouped = df.groupby("IsExpensive")["Synopsis length"].mean()
     for flag, mean_val in grouped.items():
-        label = "Expensive (> median)" if flag else "Not expensive (<= median)"
+        label = "Expensive (> median)" if flag == 1 else "Not expensive (<= median)"
         print(f"  {label:30s}  {mean_val:.2f}")
     print("=" * 60)
 
