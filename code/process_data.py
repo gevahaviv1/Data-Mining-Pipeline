@@ -4,13 +4,15 @@ INPUT_PATH = "output/books.csv"
 OUTPUT_PATH = "output/books_processed.csv"
 
 STATS_COLUMNS = ["Price in NIS", "StarRating", "Synopsis length"]
+SUMMARY_COLUMNS = ["Price in USD", "Year", "StarRating", "NumberOfReviews", "NumberOfAuthors"]
 
 
 def load_data(path: str) -> pd.DataFrame:
     df = pd.read_csv(path)
-    df["Price in NIS"] = pd.to_numeric(df["Price in NIS"], errors="coerce")
-    df["StarRating"] = pd.to_numeric(df["StarRating"], errors="coerce")
-    df["Synopsis length"] = pd.to_numeric(df["Synopsis length"], errors="coerce")
+    for col in ["Price in NIS", "Price in USD", "Year", "StarRating",
+                "NumberOfReviews", "Synopsis length"]:
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
     return df
 
 
@@ -75,6 +77,8 @@ def main():
     preview.to_csv("output/books_processed_preview.csv", index=False, encoding="utf-8-sig")
     print(f"[*] Saved output/books_processed_preview.csv ({len(preview)} rows)")
 
+    generate_summary(df)
+
     print("\n\n" + "=" * 60)
     print("GROUPBY ANALYSIS — Mean Synopsis Length by is_expensive")
     print("=" * 60)
@@ -100,6 +104,27 @@ def main():
     bottom5 = df_sorted[["Title", "Price in NIS"]].tail(5)
     print(bottom5.to_string(index=False))
     print("=" * 60)
+
+
+def generate_summary(df: pd.DataFrame) -> None:
+    numeric_df = df[SUMMARY_COLUMNS].copy()
+    for col in SUMMARY_COLUMNS:
+        numeric_df[col] = pd.to_numeric(numeric_df[col], errors="coerce")
+
+    summary = numeric_df.agg(["mean", "std", "min", "max", "median"]).round(2)
+    total_row = pd.DataFrame(
+        {col: [len(df)] for col in SUMMARY_COLUMNS}, index=["total_rows"],
+    )
+    summary = pd.concat([summary, total_row])
+
+    print("\n\n" + "=" * 60)
+    print("ASSIGNMENT SUMMARY STATISTICS")
+    print("=" * 60)
+    print(summary.to_string())
+    print("=" * 60)
+
+    summary.to_csv("output/books_summary.csv", encoding="utf-8-sig")
+    print(f"[*] Saved output/books_summary.csv")
 
 
 if __name__ == "__main__":
