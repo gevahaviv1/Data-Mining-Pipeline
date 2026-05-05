@@ -1,6 +1,6 @@
 import pandas as pd
 
-INPUT_PATH = "output/books_raw.csv"
+INPUT_PATH = "output/books.csv"
 OUTPUT_PATH = "output/books_processed.csv"
 
 STATS_COLUMNS = ["Price in NIS", "StarRating", "Synopsis length"]

@@ -207,7 +207,8 @@ def parse_book_page(html_content: str) -> dict:
     title = _extract_title(soup)
     category = _extract_category(ficha)
     categories = _extract_categories(soup)
-    authors = ficha.get("Author")
+    raw_authors = ficha.get("Author")
+    authors = raw_authors.replace(";", ",") if raw_authors else None
     price_nis = _extract_price_nis(soup)
     price_usd = _convert_price_to_usd(price_nis)
     year = ficha.get("Year")
@@ -335,12 +336,12 @@ def main(max_pages: int = 5, max_categories: Optional[int] = None):
 
     df = pd.DataFrame(all_books_data)
     os.makedirs("output", exist_ok=True)
-    df.to_csv("output/books_raw.csv", index=False, encoding="utf-8-sig")
+    df.to_csv("output/books.csv", index=False, encoding="utf-8-sig")
     df.to_json(
-        "output/books_raw.json", orient="records", indent=2, force_ascii=False,
+        "output/books.json", orient="records", indent=2, force_ascii=False,
     )
-    print(f"[*] Saved output/books_raw.csv  ({len(df)} rows)")
-    print(f"[*] Saved output/books_raw.json ({len(df)} records)")
+    print(f"[*] Saved output/books.csv  ({len(df)} rows)")
+    print(f"[*] Saved output/books.json ({len(df)} records)")
 
 
 if __name__ == "__main__":
