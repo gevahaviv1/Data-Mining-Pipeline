@@ -2,6 +2,27 @@
   "records": {
     "record": [
       {
+        "Title": "\"Surely You're Joking, mr. Feynman! \"S Adventures of a Curious Character  - Bill Gates",
+        "Category": "Biography: science, technology and medicinePhysics",
+        "Categories": "Biographies Literature Literay Studies, Biographies, General, Science Technology Medicine",
+        "Authors": "Richard P. Feynman",
+        "Price in NIS": 51.25,
+        "Year": 2018.0,
+        "Synopsis": "Richard P. Feynman, winner of the Nobel Prize in physics, thrived on outrageous adventures. In this lively work that \"can shatter the stereotype of the stuffy scientist\" (Detroit Free Press), Feynman recounts his experiences trading ideas on atomic physics with Einstein and cracking the uncrackable safes guarding the most deeply held nuclear secrets--and much more of an eyebrow-raising nature. In his stories, Feynman's life shines through in all its eccentric glory--a combustible mixture of high intelligence, unlimited curiosity, and raging chutzpah.Included for this edition is a new introduction by Bill Gates.",
+        "Synopsis length": 618,
+        "Price in USD": 17.03,
+        "NumberOfReviews": 0,
+        "Language": "English",
+        "Format": "Paperback",
+        "Dimensions": "20.8, 13.7, 2.8",
+        "Dimensions unit": "cm",
+        "Weight": 0.32,
+        "Weight unit": "kg",
+        "ISBN": 9780393355628,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 0
+      },
+      {
         "Title": "84, Charing Cross Road - Hanff, Helene",
         "Category": "Biography: writersAntiques, vintage and collectibles: books, manuscripts, ephemera and printed material",
         "Categories": "Biographies Literature Literay Studies, Biographies, General, Writers",
@@ -18,7 +39,9 @@
         "Dimensions": "19.3, 13.9, 0.8",
         "Dimensions unit": "cm",
         "Weight": 1.05,
-        "ISBN": 9780140143508
+        "ISBN": 9780140143508,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 0
       },
       {
         "Title": "Arcanum Unbounded: The Cosmere Collection - Brandon Sanderson",
@@ -37,7 +60,9 @@
         "Dimensions": "17.0, 10.4, 4.3",
         "Dimensions unit": "cm",
         "Weight": 0.35,
-        "ISBN": 9780765391186
+        "ISBN": 9780765391186,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 0
       },
       {
         "Title": "Based on a True Story: Not a Memoir  - Norm MacDonald",
@@ -56,7 +81,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.2,
         "Weight unit": "kg",
-        "ISBN": 9780812983869
+        "ISBN": 9780812983869,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 1
       },
       {
         "Title": "Beating the Street  - Lynch, Peter ; Rothchild, John",
@@ -74,7 +101,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.31,
         "Weight unit": "kg",
-        "ISBN": 9780671891633
+        "ISBN": 9780671891633,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 0
       },
       {
         "Title": "Come to the Edge  - Christina Haag",
@@ -89,7 +118,9 @@
         "NumberOfReviews": 0,
         "Language": "English",
         "Format": "Paperback",
-        "ISBN": 9780385523189
+        "ISBN": 9780385523189,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 0
       },
       {
         "Title": "Consecration to St. Joseph: The Wonders of our Spiritual Father - Calloway, MIC Donald",
@@ -109,7 +140,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.52,
         "Weight unit": "kg",
-        "ISBN": 9781596144316
+        "ISBN": 9781596144316,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 0
       },
       {
         "Title": "Dancing at the Edge of the World: Thoughts on Words, Women, Places  - Le Guin, Ursula K.",
@@ -128,7 +161,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.36,
         "Weight unit": "kg",
-        "ISBN": 9780802135292
+        "ISBN": 9780802135292,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 0
       },
       {
         "Title": "Devotions: The Selected Poems of Mary Oliver - Mary Oliver",
@@ -148,25 +183,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.38,
         "Weight unit": "kg",
-        "ISBN": 9780399563263
-      },
-      {
-        "Title": "diary,divine mercy in my soul - Kowalska, Maria Faustina",
-        "Category": "Biography: generalRoman catholicism, roman catholic church",
-        "Categories": "Biographies Literature Literay Studies, Biographies, General",
-        "Authors": "Maria Faustina Kowalska",
-        "Price in NIS": 58.67,
-        "Synopsis": "Large Print This is the book that sparked The Divine Mercy devotion -- one of the fastest growing movements in the Catholic Church today. Diary is a dramatic telling of St. Maria Faustina Kowalska's amazing encounter with The Divine Mercy -- our Lord Jesus Christ. On Mercy Sunday 2006, Pope Benedict XVI said, \"The mystery of the merciful love of God was the center of the pontificate of my venerable predecessor [Pope John Paul II] ... evidencing that the devotion to Divine Mercy is not a secondary but an integral dimension of a Christian's faith and prayer.\" Diary chronicles God's message given through St. Faustina to the world to turn to His mercy. In it, we are reminded to trust in the Divine Mercy of Jesus and seek His forgiveness. And as Christ is merciful, so, too, are we instructed to be merciful to others. The message of Divine Mercy has become an integral part of Catholic faith, including the celebration of the Feast of Divine Mercy on the Sunday after Easter as Jesus had requested of St. Faustina. Diary is truly a book that inspires people to turn with trust to Jesus and guides the reader through an intimate journey of prayer and devotion that ultimately leads to God's mercy. Includes 24-page photo section. (Sizes: Hardcover/Trade Paper: 5.5\" x 8\" & Mass Market: 4.5\" x 7\").",
-        "Synopsis length": 1302,
-        "Price in USD": 19.5,
-        "NumberOfReviews": 0,
-        "Language": "English",
-        "Format": "Paperback",
-        "Dimensions": "20.1, 13.2, 5.1",
-        "Dimensions unit": "cm",
-        "Weight": 0.79,
-        "Weight unit": "kg",
-        "ISBN": 9780944203040
+        "ISBN": 9780399563263,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 0
       },
       {
         "Title": "Dream Work  - Mary Oliver",
@@ -185,7 +204,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.11,
         "Weight unit": "kg",
-        "ISBN": 9780871130693
+        "ISBN": 9780871130693,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 0
       },
       {
         "Title": "Etty Hillesum: An Interrupted Life the Diaries, 1941-1943 and Letters From Westerbork - Hillesum, Etty ; Hoffman, Eva",
@@ -203,7 +224,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.39,
         "Weight unit": "kg",
-        "ISBN": 9780805050875
+        "ISBN": 9780805050875,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 1
       },
       {
         "Title": "Everybody Is a Poem: Midlife in Rhymes - Brierton, Jan",
@@ -217,7 +240,9 @@
         "NumberOfReviews": 0,
         "Language": "English",
         "Format": "Paperback",
-        "ISBN": 9781848409200
+        "ISBN": 9781848409200,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 0
       },
       {
         "Title": "Garfield fat cat 3-Pack #1 - Jim Davis",
@@ -236,7 +261,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.75,
         "Weight unit": "kg",
-        "ISBN": 9780345464552
+        "ISBN": 9780345464552,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 0
       },
       {
         "Title": "Genghis Khan and the Making of the Modern World  - Weatherford, Jack",
@@ -255,7 +282,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.27,
         "Weight unit": "kg",
-        "ISBN": 9780609809648
+        "ISBN": 9780609809648,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 1
       },
       {
         "Title": "How to Read a Book: The Classic Guide to Intelligent Reading  - Mortimer J. Adler",
@@ -275,7 +304,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.37,
         "Weight unit": "kg",
-        "ISBN": 9780671212094
+        "ISBN": 9780671212094,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 0
       },
       {
         "Title": "How to Starve Cancer: And Then Kill it With Ferroptosis  - McLelland, Jane",
@@ -294,7 +325,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.8,
         "Weight unit": "kg",
-        "ISBN": 9780951951743
+        "ISBN": 9780951951743,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 1
       },
       {
         "Title": "I saw Ramallah  - Barghouti, Mourid ; Said, Edward W. ; Soueif, Ahdaf",
@@ -313,7 +346,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.22,
         "Weight unit": "kg",
-        "ISBN": 9781400032662
+        "ISBN": 9781400032662,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 0
       },
       {
         "Title": "Initiation  - Haich, Elisabeth",
@@ -332,7 +367,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.5,
         "Weight unit": "kg",
-        "ISBN": 9780943358505
+        "ISBN": 9780943358505,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 1
       },
       {
         "Title": "Into the Planet: My Life as a Cave Diver  - Heinerth, Jill",
@@ -351,7 +388,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.32,
         "Weight unit": "kg",
-        "ISBN": 9780062691552
+        "ISBN": 9780062691552,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 1
       },
       {
         "Title": "Magnum Contact Sheets  - Lubben, Kristen",
@@ -370,7 +409,9 @@
         "Dimensions unit": "cm",
         "Weight": 2.81,
         "Weight unit": "kg",
-        "ISBN": 9780500292914
+        "ISBN": 9780500292914,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 1
       },
       {
         "Title": "Man's Search for Meaning  - Frankl, Viktor E. ; Kushner, Harold S. ; Winslade, William J.",
@@ -389,7 +430,25 @@
         "Dimensions unit": "cm",
         "Weight": 0.24,
         "Weight unit": "kg",
-        "ISBN": 9780807014271
+        "ISBN": 9780807014271,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 0
+      },
+      {
+        "Title": "Meditations  - Marcus Aurelius",
+        "Category": "Anthologies: general",
+        "Categories": "Biographies Literature Literay Studies, Biographies, Anthologies",
+        "Authors": "Marcus Aurelius",
+        "Price in NIS": 37.83,
+        "Synopsis": "Unabridged private reflections of the Emperor of Rome, on how one is to exist in a world of chaos. Meditations by Marcus Aurelius and in the most accepted translation by George Long, is a book that belongs on everyone’,s shelf.  A favorite of Bill Clinton and John Steinbeck, and influencer of many others for 2,000 years, it is as relevant today to those in power struggles over empires and boardrooms as it was when it was first recorded. ,  This Value Classic Reprint provides a slim volume with full text at an affordable price._,",
+        "Synopsis length": 534,
+        "Price in USD": 12.57,
+        "NumberOfReviews": 0,
+        "Language": "English",
+        "Format": "Paperback",
+        "ISBN": 9781945644573,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 0
       },
       {
         "Title": "Meditations (Collins Classics)  - Marcus Aurelius",
@@ -404,7 +463,9 @@
         "NumberOfReviews": 0,
         "Language": "English",
         "Format": "Paperback",
-        "ISBN": 9780008425012
+        "ISBN": 9780008425012,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 0
       },
       {
         "Title": "Meditations (Marcus Aurelius)  - Aurelius, Marcus",
@@ -423,21 +484,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.14,
         "Weight unit": "kg",
-        "ISBN": 9781529015027
-      },
-      {
-        "Title": "Meditations  - Marcus Aurelius",
-        "Category": "Anthologies: general",
-        "Categories": "Biographies Literature Literay Studies, Biographies, Anthologies",
-        "Authors": "Marcus Aurelius",
-        "Price in NIS": 37.83,
-        "Synopsis": "Unabridged private reflections of the Emperor of Rome, on how one is to exist in a world of chaos. Meditations by Marcus Aurelius and in the most accepted translation by George Long, is a book that belongs on everyone’,s shelf.  A favorite of Bill Clinton and John Steinbeck, and influencer of many others for 2,000 years, it is as relevant today to those in power struggles over empires and boardrooms as it was when it was first recorded. ,  This Value Classic Reprint provides a slim volume with full text at an affordable price._,",
-        "Synopsis length": 534,
-        "Price in USD": 12.57,
-        "NumberOfReviews": 0,
-        "Language": "English",
-        "Format": "Paperback",
-        "ISBN": 9781945644573
+        "ISBN": 9781529015027,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 0
       },
       {
         "Title": "Mein Kampf (German Language Edition) (in German) - Adolf Hitler",
@@ -456,7 +505,9 @@
         "Dimensions unit": "cm",
         "Weight": 1.09,
         "Weight unit": "kg",
-        "ISBN": 9780984158454
+        "ISBN": 9780984158454,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 1
       },
       {
         "Title": "Mein Kampf : The Official 1939 Edition - Adolf Hitler",
@@ -473,7 +524,9 @@
         "Format": "Hardcover",
         "Dimensions": "22.9, 15.2, 2.9",
         "Dimensions unit": "cm",
-        "ISBN": 9781908538697
+        "ISBN": 9781908538697,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 1
       },
       {
         "Title": "Mi año de sexo y relajación (in Spanish) - Romina Pistolas",
@@ -491,7 +544,9 @@
         "Format": "Paperback",
         "Dimensions": "23, 15",
         "Dimensions unit": "X",
-        "ISBN": 9789566190745
+        "ISBN": 9789566190745,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 1
       },
       {
         "Title": "Napoleon: A Life  - Roberts, Andrew",
@@ -511,7 +566,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.99,
         "Weight unit": "kg",
-        "ISBN": 9780143127857
+        "ISBN": 9780143127857,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 1
       },
       {
         "Title": "Never Finished: Unshackle Your Mind and win the war Within - David Goggins",
@@ -529,7 +586,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.46,
         "Weight unit": "kg",
-        "ISBN": 9781544534077
+        "ISBN": 9781544534077,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 1
       },
       {
         "Title": "Nobody's Girl: A Memoir of Surviving Abuse and Fighting for Justice - Virginia Roberts Giuffre",
@@ -548,25 +607,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.64,
         "Weight unit": "kg",
-        "ISBN": 9780593493120
-      },
-      {
-        "Title": "not fade away,a short life well lived - Shames, Laurence ; Barton, Peter",
-        "Category": "Biography: arts and entertainmentBiography: science, technology and medicineMemoirs",
-        "Categories": "Biographies Literature Literay Studies, Biographies, General, Art Show",
-        "Authors": "Laurence ShamesPeter Barton",
-        "Price in NIS": 64.08,
-        "Synopsis": "Some people are born to lead and destined to teach by the example of living life to the fullest, and facing death with uncommon honesty and courage. Peter Barton was that kind of person.Driven by the ideals that sparked a generation, he became an overachieving Everyman, a risk-taker who showed others what was possible. Then, in the prime of his life--hugely successful, happily married, and the father of three children--Peter faced the greatest of all challenges. Diagnosed with cancer, he began a journey that was not only frightening and appalling but also full of wonder and discovery.With unflinching candor and even surprising humor, Not Fade Away finds meaning and solace in Peter's confrontation with mortality. Celebrating life as it dares to stare down death, Peter's story addresses universal hopes and fears, and redefines the quietly heroic tasks of seeking clarity in the midst of pain, of breaking through to personal faith, and of achieving peace after bold and sincere questioning.",
-        "Synopsis length": 1000,
-        "Price in USD": 21.29,
-        "NumberOfReviews": 0,
-        "Language": "English",
-        "Format": "Paperback",
-        "Dimensions": "19.9, 13.5, 1.3",
-        "Dimensions unit": "cm",
-        "Weight": 0.18,
-        "Weight unit": "kg",
-        "ISBN": 9780060737313
+        "ISBN": 9780593493120,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 1
       },
       {
         "Title": "One Nation Under Blackmail. Vol. 1  - Webb, Whitney Alyse",
@@ -586,7 +629,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.61,
         "Weight unit": "kg",
-        "ISBN": 9781634243018
+        "ISBN": 9781634243018,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 1
       },
       {
         "Title": "Remember the Time: Protecting Michael Jackson in his Final Days  - Whitfield, Bill ; Beard, Javon ; Colby, Tanner",
@@ -604,7 +649,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.54,
         "Weight unit": "kg",
-        "ISBN": 9781602862500
+        "ISBN": 9781602862500,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 1
       },
       {
         "Title": "Romeo and Juliet (No Fear Shakespeare) Side-By-Side Plain English - Sparknotes",
@@ -623,26 +670,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.3,
         "Weight unit": "kg",
-        "ISBN": 9781586638450
-      },
-      {
-        "Title": "\"Surely You're Joking, mr. Feynman! \"S Adventures of a Curious Character  - Bill Gates",
-        "Category": "Biography: science, technology and medicinePhysics",
-        "Categories": "Biographies Literature Literay Studies, Biographies, General, Science Technology Medicine",
-        "Authors": "Richard P. Feynman",
-        "Price in NIS": 51.25,
-        "Year": 2018.0,
-        "Synopsis": "Richard P. Feynman, winner of the Nobel Prize in physics, thrived on outrageous adventures. In this lively work that \"can shatter the stereotype of the stuffy scientist\" (Detroit Free Press), Feynman recounts his experiences trading ideas on atomic physics with Einstein and cracking the uncrackable safes guarding the most deeply held nuclear secrets--and much more of an eyebrow-raising nature. In his stories, Feynman's life shines through in all its eccentric glory--a combustible mixture of high intelligence, unlimited curiosity, and raging chutzpah.Included for this edition is a new introduction by Bill Gates.",
-        "Synopsis length": 618,
-        "Price in USD": 17.03,
-        "NumberOfReviews": 0,
-        "Language": "English",
-        "Format": "Paperback",
-        "Dimensions": "20.8, 13.7, 2.8",
-        "Dimensions unit": "cm",
-        "Weight": 0.32,
-        "Weight unit": "kg",
-        "ISBN": 9780393355628
+        "ISBN": 9781586638450,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 0
       },
       {
         "Title": "The Billionaire who Wasn't: How Chuck Feeney Secretly Made and Gave Away a Fortune  - Conor O'Clery",
@@ -661,7 +691,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.43,
         "Weight unit": "kg",
-        "ISBN": 9781610393348
+        "ISBN": 9781610393348,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 1
       },
       {
         "Title": "The Diary of a Young Girl - Anne Frank",
@@ -676,7 +708,9 @@
         "NumberOfReviews": 0,
         "Language": "English",
         "Format": "Paperback",
-        "ISBN": 9788172345198
+        "ISBN": 9788172345198,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 0
       },
       {
         "Title": "The Essential Rumi: New Expanded Edition  - Coleman Barks",
@@ -695,7 +729,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.44,
         "Weight unit": "kg",
-        "ISBN": 9780062509598
+        "ISBN": 9780062509598,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 1
       },
       {
         "Title": "The House with All the Lights on: Three Generations, One Roof, a Language of Light - Kirkness, Jessica",
@@ -710,7 +746,9 @@
         "NumberOfReviews": 1,
         "Language": "English",
         "Format": "Paperback",
-        "ISBN": 9781761069079
+        "ISBN": 9781761069079,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 1
       },
       {
         "Title": "The Myth of Sisyphus (Vintage International)  - Albert Camus",
@@ -729,7 +767,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.16,
         "Weight unit": "kg",
-        "ISBN": 9780525564454
+        "ISBN": 9780525564454,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 0
       },
       {
         "Title": "The Nazi and the Psychiatrist: Hermann Göring, dr. Douglas m. Kelley, and a Fatal Meeting of Minds at the end of Wwii  - El-Hai, Jack",
@@ -748,7 +788,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.29,
         "Weight unit": "kg",
-        "ISBN": 9781610394635
+        "ISBN": 9781610394635,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 1
       },
       {
         "Title": "The Numerical Discourses of the Buddha: A Complete Translation of the Anguttara Nikaya (Teachings of the Buddha)  - Bhikkhu Bodhi",
@@ -763,26 +805,9 @@
         "NumberOfReviews": 0,
         "Language": "English",
         "Format": "Hardcover",
-        "ISBN": 9781614290407
-      },
-      {
-        "Title": "the philosophy of being - Renard, Henri",
-        "Category": "Anthologies: general",
-        "Categories": "Biographies Literature Literay Studies, Biographies, Anthologies",
-        "Authors": "Henri Renard",
-        "Price in NIS": 139.91,
-        "Year": 2010.0,
-        "Synopsis": "Kessinger Publishing is the place to find hundreds of thousands of rare and hard-to-find books with something of interest for everyone!",
-        "Synopsis length": 135,
-        "Price in USD": 46.49,
-        "NumberOfReviews": 0,
-        "Language": "English",
-        "Format": "Paperback",
-        "Dimensions": "15.2, 22.9, 1.4",
-        "Dimensions unit": "cm",
-        "Weight": 0.37,
-        "Weight unit": "kg",
-        "ISBN": 9781163179185
+        "ISBN": 9781614290407,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 1
       },
       {
         "Title": "The Pillow Book (Penguin Classics)  - Shonagon, Sei ; McKinney, Meredith ; McKinney, Meredith",
@@ -801,7 +826,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.3,
         "Weight unit": "kg",
-        "ISBN": 9780140448061
+        "ISBN": 9780140448061,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 0
       },
       {
         "Title": "The Power Broker: Robert Moses and the Fall of new York - Robert A. Caro",
@@ -821,7 +848,9 @@
         "Dimensions unit": "cm",
         "Weight": 1.63,
         "Weight unit": "kg",
-        "ISBN": 9780394720241
+        "ISBN": 9780394720241,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 1
       },
       {
         "Title": "The Tempest: applause first folio editions - William Shakespeare",
@@ -840,7 +869,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.31,
         "Weight unit": "kg",
-        "ISBN": 9781557832955
+        "ISBN": 9781557832955,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 0
       },
       {
         "Title": "The Year of Magical Thinking  - Joan Didion",
@@ -859,7 +890,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.23,
         "Weight unit": "kg",
-        "ISBN": 9781400078431
+        "ISBN": 9781400078431,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 0
       },
       {
         "Title": "Tihkal: The Continuation  - Shulgin, Alexander ; Shulgin, Ann",
@@ -879,7 +912,9 @@
         "Dimensions unit": "cm",
         "Weight": 1.09,
         "Weight unit": "kg",
-        "ISBN": 9780963009692
+        "ISBN": 9780963009692,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 1
       },
       {
         "Title": "Useless Magic: Lyrics and Poetry  - Welch, Florence",
@@ -899,7 +934,70 @@
         "Dimensions unit": "cm",
         "Weight": 0.82,
         "Weight unit": "kg",
-        "ISBN": 9780525577157
+        "ISBN": 9780525577157,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 1
+      },
+      {
+        "Title": "diary,divine mercy in my soul - Kowalska, Maria Faustina",
+        "Category": "Biography: generalRoman catholicism, roman catholic church",
+        "Categories": "Biographies Literature Literay Studies, Biographies, General",
+        "Authors": "Maria Faustina Kowalska",
+        "Price in NIS": 58.67,
+        "Synopsis": "Large Print This is the book that sparked The Divine Mercy devotion -- one of the fastest growing movements in the Catholic Church today. Diary is a dramatic telling of St. Maria Faustina Kowalska's amazing encounter with The Divine Mercy -- our Lord Jesus Christ. On Mercy Sunday 2006, Pope Benedict XVI said, \"The mystery of the merciful love of God was the center of the pontificate of my venerable predecessor [Pope John Paul II] ... evidencing that the devotion to Divine Mercy is not a secondary but an integral dimension of a Christian's faith and prayer.\" Diary chronicles God's message given through St. Faustina to the world to turn to His mercy. In it, we are reminded to trust in the Divine Mercy of Jesus and seek His forgiveness. And as Christ is merciful, so, too, are we instructed to be merciful to others. The message of Divine Mercy has become an integral part of Catholic faith, including the celebration of the Feast of Divine Mercy on the Sunday after Easter as Jesus had requested of St. Faustina. Diary is truly a book that inspires people to turn with trust to Jesus and guides the reader through an intimate journey of prayer and devotion that ultimately leads to God's mercy. Includes 24-page photo section. (Sizes: Hardcover/Trade Paper: 5.5\" x 8\" & Mass Market: 4.5\" x 7\").",
+        "Synopsis length": 1302,
+        "Price in USD": 19.5,
+        "NumberOfReviews": 0,
+        "Language": "English",
+        "Format": "Paperback",
+        "Dimensions": "20.1, 13.2, 5.1",
+        "Dimensions unit": "cm",
+        "Weight": 0.79,
+        "Weight unit": "kg",
+        "ISBN": 9780944203040,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 0
+      },
+      {
+        "Title": "not fade away,a short life well lived - Shames, Laurence ; Barton, Peter",
+        "Category": "Biography: arts and entertainmentBiography: science, technology and medicineMemoirs",
+        "Categories": "Biographies Literature Literay Studies, Biographies, General, Art Show",
+        "Authors": "Laurence ShamesPeter Barton",
+        "Price in NIS": 64.08,
+        "Synopsis": "Some people are born to lead and destined to teach by the example of living life to the fullest, and facing death with uncommon honesty and courage. Peter Barton was that kind of person.Driven by the ideals that sparked a generation, he became an overachieving Everyman, a risk-taker who showed others what was possible. Then, in the prime of his life--hugely successful, happily married, and the father of three children--Peter faced the greatest of all challenges. Diagnosed with cancer, he began a journey that was not only frightening and appalling but also full of wonder and discovery.With unflinching candor and even surprising humor, Not Fade Away finds meaning and solace in Peter's confrontation with mortality. Celebrating life as it dares to stare down death, Peter's story addresses universal hopes and fears, and redefines the quietly heroic tasks of seeking clarity in the midst of pain, of breaking through to personal faith, and of achieving peace after bold and sincere questioning.",
+        "Synopsis length": 1000,
+        "Price in USD": 21.29,
+        "NumberOfReviews": 0,
+        "Language": "English",
+        "Format": "Paperback",
+        "Dimensions": "19.9, 13.5, 1.3",
+        "Dimensions unit": "cm",
+        "Weight": 0.18,
+        "Weight unit": "kg",
+        "ISBN": 9780060737313,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 0
+      },
+      {
+        "Title": "the philosophy of being - Renard, Henri",
+        "Category": "Anthologies: general",
+        "Categories": "Biographies Literature Literay Studies, Biographies, Anthologies",
+        "Authors": "Henri Renard",
+        "Price in NIS": 139.91,
+        "Year": 2010.0,
+        "Synopsis": "Kessinger Publishing is the place to find hundreds of thousands of rare and hard-to-find books with something of interest for everyone!",
+        "Synopsis length": 135,
+        "Price in USD": 46.49,
+        "NumberOfReviews": 0,
+        "Language": "English",
+        "Format": "Paperback",
+        "Dimensions": "15.2, 22.9, 1.4",
+        "Dimensions unit": "cm",
+        "Weight": 0.37,
+        "Weight unit": "kg",
+        "ISBN": 9781163179185,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 1
       },
       {
         "Title": "what remains,a memoir of fate, friendship, and love - Radziwill, Carole",
@@ -917,7 +1015,9 @@
         "Dimensions unit": "cm",
         "Weight": 0.25,
         "Weight unit": "kg",
-        "ISBN": 9780743277181
+        "ISBN": 9780743277181,
+        "NumberOfAuthors": 1,
+        "IsExpensive": 1
       }
     ]
   }
