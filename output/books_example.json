@@ -2,12 +2,14 @@
   "records": {
     "record": [
       {
+        "id": "1",
+        "url": "https://www.bookdelivery.com/il-en/book-84-charing-cross-road/9780140143508/p/1547856",
         "Title": "84, Charing Cross Road - Hanff, Helene",
         "Category": "Biography: writersAntiques, vintage and collectibles: books, manuscripts, ephemera and printed material",
         "Categories": "Biographies Literature Literay Studies, Biographies, General, Writers",
         "Authors": "Helene Hanff",
         "Price in NIS": 51.71,
-        "Year": 1990.0,
+        "Year": "1990",
         "Synopsis": "\"Those who have read The Guernsey Literary and Potato Peel Pie Society,  a novel comprised of only letters between the characters, will see how much that best-seller owes 84, Charing Cross Road.\" -- Medium.com A heartwarming love story about people who love books for readers who love books This funny, poignant, classic love story unfolds through a series of letters between Helene Hanff, a freelance writer living in New York City, and a used-book dealer in London at 84, Charing Cross Road. Through the years, though never meeting and separated both geographically and culturally, they share a charming, sentimental friendship based on their common love for books. Discover the relationship that has touched the hearts of thousands of readers around the world, and was the basis for a film starring Anthony Hopkins and Anne Bancroft.",
         "Synopsis length": 836,
         "Price in USD": 17.18,
@@ -18,7 +20,7 @@
         "Dimensions": "19.3, 13.9, 0.8",
         "Dimensions unit": "cm",
         "Weight": 1.05,
-        "ISBN": 9780140143508
+        "ISBN": "9780140143508"
       }
     ]
   }

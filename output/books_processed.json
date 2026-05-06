@@ -2,6 +2,7 @@
   "records": {
     "record": [
       {
+        "id": 35,
         "Title": "\"Surely You're Joking, mr. Feynman! \"S Adventures of a Curious Character  - Bill Gates",
         "Category": "Biography: science, technology and medicinePhysics",
         "Categories": "Biographies Literature Literay Studies, Biographies, General, Science Technology Medicine",
@@ -23,6 +24,7 @@
         "IsExpensive": 0
       },
       {
+        "id": 1,
         "Title": "84, Charing Cross Road - Hanff, Helene",
         "Category": "Biography: writersAntiques, vintage and collectibles: books, manuscripts, ephemera and printed material",
         "Categories": "Biographies Literature Literay Studies, Biographies, General, Writers",
@@ -44,6 +46,7 @@
         "IsExpensive": 0
       },
       {
+        "id": 2,
         "Title": "Arcanum Unbounded: The Cosmere Collection - Brandon Sanderson",
         "Category": "Anthologies: generalEpic/heroic fantasyShort stories, tales",
         "Categories": "Biographies Literature Literay Studies, Biographies, Anthologies",
@@ -65,6 +68,7 @@
         "IsExpensive": 0
       },
       {
+        "id": 3,
         "Title": "Based on a True Story: Not a Memoir  - Norm MacDonald",
         "Category": "Biography: arts and entertainmentMemoirsHumour collections and anthologies",
         "Categories": "Biographies Literature Literay Studies, Biographies, General, Art Show",
@@ -86,6 +90,7 @@
         "IsExpensive": 1
       },
       {
+        "id": 4,
         "Title": "Beating the Street  - Lynch, Peter ; Rothchild, John",
         "Category": "Biography: business and industryInvestments and securitiesPersonal finance",
         "Categories": "Biographies Literature Literay Studies, Biographies, General, Business Industry",
@@ -106,6 +111,7 @@
         "IsExpensive": 0
       },
       {
+        "id": 5,
         "Title": "Come to the Edge  - Christina Haag",
         "Category": "Biography: arts and entertainment",
         "Categories": "Biographies Literature Literay Studies, Biographies, General, Art Show",
@@ -123,6 +129,7 @@
         "IsExpensive": 0
       },
       {
+        "id": 6,
         "Title": "Consecration to St. Joseph: The Wonders of our Spiritual Father - Calloway, MIC Donald",
         "Category": "Biography: religious and spiritualRoman catholicism, roman catholic churchNew testamentsDevotional matters",
         "Categories": "Biographies Literature Literay Studies, Biographies, General, Religious Spiritual",
@@ -145,6 +152,7 @@
         "IsExpensive": 0
       },
       {
+        "id": 7,
         "Title": "Dancing at the Edge of the World: Thoughts on Words, Women, Places  - Le Guin, Ursula K.",
         "Category": "Writing and editing guidesLiterary essaysLiterature: history and criticismGender studies: women and girls",
         "Categories": "Language Linguistics, General, Proof Reading",
@@ -166,6 +174,7 @@
         "IsExpensive": 0
       },
       {
+        "id": 8,
         "Title": "Devotions: The Selected Poems of Mary Oliver - Mary Oliver",
         "Category": "United states of americaPoetry",
         "Categories": "Place Qualifiers, America, North, Usa",
@@ -188,6 +197,7 @@
         "IsExpensive": 0
       },
       {
+        "id": 10,
         "Title": "Dream Work  - Mary Oliver",
         "Category": "United states of americaPoetry",
         "Categories": "Place Qualifiers, America, North, Usa",
@@ -209,6 +219,7 @@
         "IsExpensive": 0
       },
       {
+        "id": 11,
         "Title": "Etty Hillesum: An Interrupted Life the Diaries, 1941-1943 and Letters From Westerbork - Hillesum, Etty ; Hoffman, Eva",
         "Category": "Related to jewish people or groupsBiography: historical, political and military",
         "Categories": "Interest Qualifiers, Social Culture, Religious Communities, Jews",
@@ -229,6 +240,7 @@
         "IsExpensive": 1
       },
       {
+        "id": 12,
         "Title": "Everybody Is a Poem: Midlife in Rhymes - Brierton, Jan",
         "Category": "IrelandUnited kingdomPoetry",
         "Categories": "Place Qualifiers, Europe, Western Europe, Ireland",
@@ -245,6 +257,7 @@
         "IsExpensive": 0
       },
       {
+        "id": 13,
         "Title": "Garfield fat cat 3-Pack #1 - Jim Davis",
         "Category": "Anthologies: generalHumour collections and anthologiesNature and the natural world: general interestAmerican/british style comic books and graphic novelsComic strips",
         "Categories": "Biographies Literature Literay Studies, Biographies, Anthologies",
@@ -266,6 +279,7 @@
         "IsExpensive": 0
       },
       {
+        "id": 14,
         "Title": "Genghis Khan and the Making of the Modern World  - Weatherford, Jack",
         "Category": "EuropeAsiaBiography: historical, political and militaryEuropean history: middle agesAsian history",
         "Categories": "Place Qualifiers, Europe",
@@ -287,6 +301,7 @@
         "IsExpensive": 1
       },
       {
+        "id": 15,
         "Title": "How to Read a Book: The Classic Guide to Intelligent Reading  - Mortimer J. Adler",
         "Category": "Literature: history and criticismPhilosophy",
         "Categories": "Biographies Literature Literay Studies, Literature",
@@ -309,6 +324,7 @@
         "IsExpensive": 0
       },
       {
+        "id": 16,
         "Title": "How to Starve Cancer: And Then Kill it With Ferroptosis  - McLelland, Jane",
         "Category": "Biography: science, technology and medicineCoping with cancerSelf-assertion, motivation, self-esteem and positive mental attitude",
         "Categories": "Biographies Literature Literay Studies, Biographies, General, Science Technology Medicine",
@@ -330,6 +346,7 @@
         "IsExpensive": 1
       },
       {
+        "id": 17,
         "Title": "I saw Ramallah  - Barghouti, Mourid ; Said, Edward W. ; Soueif, Ahdaf",
         "Category": "Middle eastLiterature: history and criticism",
         "Categories": "Place Qualifiers, Asia, Near East",
@@ -351,6 +368,7 @@
         "IsExpensive": 0
       },
       {
+        "id": 18,
         "Title": "Initiation  - Haich, Elisabeth",
         "Category": "Biography: generalMind, body and spirit: thought and practice",
         "Categories": "Biographies Literature Literay Studies, Biographies, General",
@@ -372,6 +390,7 @@
         "IsExpensive": 1
       },
       {
+        "id": 19,
         "Title": "Into the Planet: My Life as a Cave Diver  - Heinerth, Jill",
         "Category": "Biography: adventurers and explorersMemoirsOceanography (seas and oceans)",
         "Categories": "Biographies Literature Literay Studies, Biographies, General, Adventurer Explorers",
@@ -393,6 +412,7 @@
         "IsExpensive": 1
       },
       {
+        "id": 20,
         "Title": "Magnum Contact Sheets  - Lubben, Kristen",
         "Category": "Photographic collectionsPhotojournalism and documentary photographyBiography: general",
         "Categories": "Arts, Photography Photographers, Collections",
@@ -414,6 +434,7 @@
         "IsExpensive": 1
       },
       {
+        "id": 21,
         "Title": "Man's Search for Meaning  - Frankl, Viktor E. ; Kushner, Harold S. ; Winslade, William J.",
         "Category": "Biography: historical, political and militaryPsychotherapyThe holocaust",
         "Categories": "Biographies Literature Literay Studies, Biographies, General, Historical Political Military",
@@ -435,6 +456,7 @@
         "IsExpensive": 0
       },
       {
+        "id": 24,
         "Title": "Meditations  - Marcus Aurelius",
         "Category": "Anthologies: general",
         "Categories": "Biographies Literature Literay Studies, Biographies, Anthologies",
@@ -451,6 +473,7 @@
         "IsExpensive": 0
       },
       {
+        "id": 22,
         "Title": "Meditations (Collins Classics)  - Marcus Aurelius",
         "Category": "Ancient, classical and medieval texts",
         "Categories": "Biographies Literature Literay Studies, Ancient Classical Medieval Texts",
@@ -468,6 +491,7 @@
         "IsExpensive": 0
       },
       {
+        "id": 23,
         "Title": "Meditations (Marcus Aurelius)  - Aurelius, Marcus",
         "Category": "Ancient, classical and medieval textsPhilosophy of scienceInfluence of science and technology on societyAncient greek and roman philosophy",
         "Categories": "Biographies Literature Literay Studies, Ancient Classical Medieval Texts",
@@ -489,6 +513,7 @@
         "IsExpensive": 0
       },
       {
+        "id": 25,
         "Title": "Mein Kampf (German Language Edition) (in German) - Adolf Hitler",
         "Category": "C. 1914–c. 1918 (period of the first world war)C. 1939–c. 1945 (era of the second world war)Biography: historical, political and militaryFirst world warSecond world war",
         "Categories": "Time Period Qualifiers, C 1500 To Present, 20Th Century, Century Xx First Half, C 1910 C 1919, World War First War",
@@ -510,6 +535,7 @@
         "IsExpensive": 1
       },
       {
+        "id": 26,
         "Title": "Mein Kampf : The Official 1939 Edition - Adolf Hitler",
         "Category": "Biography: historical, political and military",
         "Categories": "Biographies Literature Literay Studies, Biographies, General, Historical Political Military",
@@ -529,6 +555,7 @@
         "IsExpensive": 1
       },
       {
+        "id": 27,
         "Title": "Mi año de sexo y relajación (in Spanish) - Romina Pistolas",
         "Category": "Autobiography: generalAutobiography: arts and entertainmentBiography: writersHealth, relationships and personal developmentLifestyle, hobbies and leisure",
         "Categories": "Biographies Literature Literay Studies, Biographies, General, Autobiographies",
@@ -549,6 +576,7 @@
         "IsExpensive": 1
       },
       {
+        "id": 28,
         "Title": "Napoleon: A Life  - Roberts, Andrew",
         "Category": "FranceBiography: historical, political and militaryTrue stories of war and combatEuropean history",
         "Categories": "Place Qualifiers, Europe, Western Europe, France",
@@ -571,6 +599,7 @@
         "IsExpensive": 1
       },
       {
+        "id": 29,
         "Title": "Never Finished: Unshackle Your Mind and win the war Within - David Goggins",
         "Category": "MemoirsExercise and physical training booksSelf-assertion, motivation, self-esteem and positive mental attitude",
         "Categories": "Biographies Literature Literay Studies, Biographies, Memories",
@@ -591,6 +620,7 @@
         "IsExpensive": 1
       },
       {
+        "id": 30,
         "Title": "Nobody's Girl: A Memoir of Surviving Abuse and Fighting for Justice - Virginia Roberts Giuffre",
         "Category": "Memoirs",
         "Categories": "Biographies Literature Literay Studies, Biographies, Memories",
@@ -612,6 +642,7 @@
         "IsExpensive": 1
       },
       {
+        "id": 32,
         "Title": "One Nation Under Blackmail. Vol. 1  - Webb, Whitney Alyse",
         "Category": "True crimeSex and sexuality, social aspectsOrganised crimeEspionage and secret services",
         "Categories": "Biographies Literature Literay Studies, Biographies, Real Stories, Crimes",
@@ -634,6 +665,7 @@
         "IsExpensive": 1
       },
       {
+        "id": 33,
         "Title": "Remember the Time: Protecting Michael Jackson in his Final Days  - Whitfield, Bill ; Beard, Javon ; Colby, Tanner",
         "Category": "Composers and songwritersMusicians, singers, bands and groupsBiography: arts and entertainmentMemoirs",
         "Categories": "Arts, Music, Composers",
@@ -654,6 +686,7 @@
         "IsExpensive": 1
       },
       {
+        "id": 34,
         "Title": "Romeo and Juliet (No Fear Shakespeare) Side-By-Side Plain English - Sparknotes",
         "Category": "ShakespeareClassical and pre-20th century playsLiterary studies: plays and playwrightsLiterature handbooks, reviews and book guides",
         "Categories": "Interest Qualifiers, Social Culture, Cultural Interests, Shakespeare",
@@ -675,6 +708,7 @@
         "IsExpensive": 0
       },
       {
+        "id": 36,
         "Title": "The Billionaire who Wasn't: How Chuck Feeney Secretly Made and Gave Away a Fortune  - Conor O'Clery",
         "Category": "Biography: business and industry",
         "Categories": "Biographies Literature Literay Studies, Biographies, General, Business Industry",
@@ -696,6 +730,7 @@
         "IsExpensive": 1
       },
       {
+        "id": 37,
         "Title": "The Diary of a Young Girl - Anne Frank",
         "Category": "EuropeMemoirsEuropean history",
         "Categories": "Place Qualifiers, Europe",
@@ -713,6 +748,7 @@
         "IsExpensive": 0
       },
       {
+        "id": 38,
         "Title": "The Essential Rumi: New Expanded Edition  - Coleman Barks",
         "Category": "Middle eastMedieval styleAncient, classical and medieval textsClassical and pre-20th century poetry",
         "Categories": "Place Qualifiers, Asia, Near East",
@@ -734,6 +770,7 @@
         "IsExpensive": 1
       },
       {
+        "id": 39,
         "Title": "The House with All the Lights on: Three Generations, One Roof, a Language of Light - Kirkness, Jessica",
         "Category": "Related to people with disabilities or similar conditions, whether visible or notBiography: generalMemoirsDisability: social aspects",
         "Categories": "Interest Qualifiers, Social Culture, Physical Disability",
@@ -751,6 +788,7 @@
         "IsExpensive": 1
       },
       {
+        "id": 40,
         "Title": "The Myth of Sisyphus (Vintage International)  - Albert Camus",
         "Category": "Literary essaysEthics and moral philosophy",
         "Categories": "Biographies Literature Literay Studies, Biographies, Literary Essays\n",
@@ -772,6 +810,7 @@
         "IsExpensive": 0
       },
       {
+        "id": 41,
         "Title": "The Nazi and the Psychiatrist: Hermann Göring, dr. Douglas m. Kelley, and a Fatal Meeting of Minds at the end of Wwii  - El-Hai, Jack",
         "Category": "C. 1939–c. 1945 (era of the second world war)Biography: generalTrue crimeThe holocaustSecond world war",
         "Categories": "Time Period Qualifiers, C 1500 To Present, 20Th Century, Century Xx First Half, C 1940 C 1949, Second World War",
@@ -793,6 +832,7 @@
         "IsExpensive": 1
       },
       {
+        "id": 42,
         "Title": "The Numerical Discourses of the Buddha: A Complete Translation of the Anguttara Nikaya (Teachings of the Buddha)  - Bhikkhu Bodhi",
         "Category": "AsiaAnthologies: general",
         "Categories": "Place Qualifiers, Asia",
@@ -810,6 +850,7 @@
         "IsExpensive": 1
       },
       {
+        "id": 44,
         "Title": "The Pillow Book (Penguin Classics)  - Shonagon, Sei ; McKinney, Meredith ; McKinney, Meredith",
         "Category": "JapanBiography: historical, political and militaryDiaries, correspondenceAsian history",
         "Categories": "Place Qualifiers, Asia, Oriental Lejano Oriente, Japan",
@@ -831,6 +872,7 @@
         "IsExpensive": 0
       },
       {
+        "id": 45,
         "Title": "The Power Broker: Robert Moses and the Fall of new York - Robert A. Caro",
         "Category": "Biography: historical, political and militaryUrban communitiesPolitical leaders and leadership",
         "Categories": "Biographies Literature Literay Studies, Biographies, General, Historical Political Military",
@@ -853,6 +895,7 @@
         "IsExpensive": 1
       },
       {
+        "id": 46,
         "Title": "The Tempest: applause first folio editions - William Shakespeare",
         "Category": "ShakespeareClassical and pre-20th century playsClassic fiction",
         "Categories": "Interest Qualifiers, Social Culture, Cultural Interests, Shakespeare",
@@ -874,6 +917,7 @@
         "IsExpensive": 0
       },
       {
+        "id": 47,
         "Title": "The Year of Magical Thinking  - Joan Didion",
         "Category": "Biography: writersMemoirsGender studies: women and girls",
         "Categories": "Biographies Literature Literay Studies, Biographies, General, Writers",
@@ -895,6 +939,7 @@
         "IsExpensive": 0
       },
       {
+        "id": 48,
         "Title": "Tihkal: The Continuation  - Shulgin, Alexander ; Shulgin, Ann",
         "Category": "Biography: science, technology and medicinePopular cultureBiochemistry",
         "Categories": "Biographies Literature Literay Studies, Biographies, General, Science Technology Medicine",
@@ -917,6 +962,7 @@
         "IsExpensive": 1
       },
       {
+        "id": 49,
         "Title": "Useless Magic: Lyrics and Poetry  - Welch, Florence",
         "Category": "Composers and songwritersMusicians, singers, bands and groupsScores, lyrics and librettiPoetryBiography: arts and entertainment",
         "Categories": "Arts, Music, Composers",
@@ -939,6 +985,7 @@
         "IsExpensive": 1
       },
       {
+        "id": 9,
         "Title": "diary,divine mercy in my soul - Kowalska, Maria Faustina",
         "Category": "Biography: generalRoman catholicism, roman catholic church",
         "Categories": "Biographies Literature Literay Studies, Biographies, General",
@@ -959,6 +1006,7 @@
         "IsExpensive": 0
       },
       {
+        "id": 31,
         "Title": "not fade away,a short life well lived - Shames, Laurence ; Barton, Peter",
         "Category": "Biography: arts and entertainmentBiography: science, technology and medicineMemoirs",
         "Categories": "Biographies Literature Literay Studies, Biographies, General, Art Show",
@@ -979,6 +1027,7 @@
         "IsExpensive": 0
       },
       {
+        "id": 43,
         "Title": "the philosophy of being - Renard, Henri",
         "Category": "Anthologies: general",
         "Categories": "Biographies Literature Literay Studies, Biographies, Anthologies",
@@ -1000,6 +1049,7 @@
         "IsExpensive": 1
       },
       {
+        "id": 50,
         "Title": "what remains,a memoir of fate, friendship, and love - Radziwill, Carole",
         "Category": "Biography: arts and entertainmentMemoirsGender studies: women and girls",
         "Categories": "Biographies Literature Literay Studies, Biographies, General, Art Show",

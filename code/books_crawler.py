@@ -325,7 +325,8 @@ def main(max_pages: int = 5, max_categories: Optional[int] = None):
                 continue
             try:
                 data = parse_book_page(html)
-                all_books_data.append(data)
+                record = {"id": str(len(all_books_data) + 1), "url": book_url, **data}
+                all_books_data.append(record)
 
                 # Capture screenshot of the first book page for the example
                 if len(all_books_data) == 1 and driver:
@@ -363,7 +364,7 @@ def main(max_pages: int = 5, max_categories: Optional[int] = None):
     example_payload = {"records": {"record": [example_record]}}
     with open("output/books_example.json", "w", encoding="utf-8") as jf:
         json.dump(example_payload, jf, indent=2, ensure_ascii=False)
-    print("[*] Saved output/books_example.json")
+    print("[*] Saved output/books_example.json")  # id & url always present, never stripped
 
 
 def _strip_nulls(d: dict) -> dict:
