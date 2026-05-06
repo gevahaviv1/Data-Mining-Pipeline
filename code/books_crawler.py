@@ -16,16 +16,15 @@ from selenium.webdriver.chrome.options import Options
 BASE_URL = "https://www.bookdelivery.com"
 NIS_TO_USD_RATE = 3.01
 REQUEST_TIMEOUT = 20
+INCREMENTAL_SAVE_INTERVAL = 100
 
 # ---------------------------------------------------------------------------
 # Browser / Session helpers
 # ---------------------------------------------------------------------------
 
 def _create_session() -> Tuple[requests.Session, str, webdriver.Chrome]:
-    """Launch a visible Chrome to solve the AWS WAF challenge, then
-    transfer the cookies to a lightweight requests.Session.
-    Returns the session, the homepage HTML, and the still-open driver
-    (for screenshot capture later)."""
+    """Launch Chrome with anti-detection, solve WAF, return (session, html, driver).
+    The driver is kept alive so cookies can be refreshed between categories."""
     print("[*] Launching browser to solve WAF challenge …")
     opts = Options()
     opts.add_argument("--disable-blink-features=AutomationControlled")
@@ -36,32 +35,48 @@ def _create_session() -> Tuple[requests.Session, str, webdriver.Chrome]:
         "Page.addScriptToEvaluateOnNewDocument",
         {"source": 'Object.defineProperty(navigator,"webdriver",{get:()=>undefined})'},
     )
+
+    session = requests.Session()
+    first_page_html = _refresh_waf_cookies(driver, session)
+    return session, first_page_html, driver
+
+
+def _refresh_waf_cookies(driver: webdriver.Chrome, session: requests.Session) -> str:
+    """Navigate to homepage, wait for WAF challenge, transfer fresh cookies."""
+    print("[*] Refreshing WAF session …")
     driver.get(BASE_URL)
     time.sleep(12)
 
     user_agent = driver.execute_script("return navigator.userAgent")
-    cookies = {c["name"]: c["value"] for c in driver.get_cookies()}
-    first_page_html = driver.page_source
-    print("[*] WAF challenge solved – cookies transferred to session.")
-
-    session = requests.Session()
     session.headers["User-Agent"] = user_agent
-    for k, v in cookies.items():
-        session.cookies.set(k, v)
+    session.cookies.clear()
+    for c in driver.get_cookies():
+        session.cookies.set(c["name"], c["value"])
 
-    return session, first_page_html, driver
+    html = driver.page_source
+    print("[*] WAF session refreshed – cookies transferred.")
+    return html
 
 
-def _polite_get(session: requests.Session, url: str) -> Optional[str]:
-    """GET with politeness delay and error handling."""
+def _polite_get(session: requests.Session, url: str, retries: int = 2) -> Optional[str]:
+    """GET with politeness delay, retry logic, and WAF expiry detection."""
     time.sleep(random.uniform(1, 3))
-    try:
-        resp = session.get(url, timeout=REQUEST_TIMEOUT)
-        resp.raise_for_status()
-        return resp.text
-    except requests.RequestException as exc:
-        print(f"  [!] Request failed for {url}: {exc}")
-        return None
+    for attempt in range(retries + 1):
+        try:
+            resp = session.get(url, timeout=REQUEST_TIMEOUT)
+            if resp.status_code == 202 and len(resp.text) == 0:
+                print(f"  [!] Empty 202 (WAF expired?) \u2013 {url}")
+                return None
+            resp.raise_for_status()
+            return resp.text
+        except requests.RequestException as exc:
+            if attempt < retries:
+                wait = 2 ** (attempt + 1)
+                print(f"  [!] Retry {attempt + 1}/{retries} in {wait}s: {exc}")
+                time.sleep(wait)
+            else:
+                print(f"  [!] Failed after {retries + 1} attempts: {url}: {exc}")
+                return None
 
 # ---------------------------------------------------------------------------
 # Ficha (product‑details table) helpers
@@ -299,6 +314,15 @@ def get_book_links_from_category(
 # Main orchestrator
 # ---------------------------------------------------------------------------
 
+def _save_progress(all_books_data: List[dict]) -> None:
+    """Incrementally save current progress to CSV and JSON."""
+    os.makedirs("output", exist_ok=True)
+    df = pd.DataFrame(all_books_data)
+    df.to_csv("output/books_raw.csv", index=False, encoding="utf-8-sig")
+    _save_assignment_json(df, "output/books_raw.json")
+    print(f"  [SAVE] Progress saved: {len(all_books_data)} books -> books_raw.csv / books_raw.json")
+
+
 def main(max_pages: int = 5, max_categories: Optional[int] = None):
     session, first_page_html, driver = _create_session()
 
@@ -313,17 +337,31 @@ def main(max_pages: int = 5, max_categories: Optional[int] = None):
     print(f"\n[*] Crawling {len(categories)} categories (max {max_pages} pages each)\n")
 
     all_books_data: List[dict] = []
+    global_count = 0
+    errors = 0
+    last_save_count = 0
 
     for cat_idx, cat in enumerate(categories, 1):
-        print(f"[{cat_idx}/{len(categories)}] Scraping category: {cat['title']}")
+        # Refresh WAF cookies before each category to prevent session expiry
+        _refresh_waf_cookies(driver, session)
+
+        print(f"\n[{cat_idx}/{len(categories)}] Scraping category: {cat['title']}")
         book_urls = get_book_links_from_category(session, cat["url"], max_pages)
 
+        if not book_urls:
+            print(f"  [!] No book URLs found – skipping category.")
+            continue
+
         for book_idx, book_url in enumerate(book_urls, 1):
-            print(f"  Fetching book {book_idx}/{len(book_urls)}: {book_url}")
-            html = _polite_get(session, book_url)
-            if not html:
-                continue
+            global_count += 1
+            print(f"  [{global_count}] Book {book_idx}/{len(book_urls)}: {book_url}")
+
             try:
+                html = _polite_get(session, book_url)
+                if not html:
+                    errors += 1
+                    continue
+
                 data = parse_book_page(html)
                 record = {"id": str(len(all_books_data) + 1), "url": book_url, **data}
                 all_books_data.append(record)
@@ -333,16 +371,25 @@ def main(max_pages: int = 5, max_categories: Optional[int] = None):
                     try:
                         driver.get(book_url)
                         time.sleep(3)
+                        os.makedirs("output", exist_ok=True)
                         driver.save_screenshot("output/books_example.jpg")
                         print("  [*] Screenshot saved: output/books_example.jpg")
                     except Exception:
                         pass
+
+                # Incremental save every N books
+                if len(all_books_data) - last_save_count >= INCREMENTAL_SAVE_INTERVAL:
+                    _save_progress(all_books_data)
+                    last_save_count = len(all_books_data)
+
             except Exception as exc:
-                print(f"  [!] Parse error for {book_url}: {exc}")
+                errors += 1
+                print(f"  [!] Error for {book_url}: {exc}")
+                continue
 
-    print(f"\n[*] Scraping complete – {len(all_books_data)} books collected.")
+    print(f"\n[*] Scraping complete – {len(all_books_data)} books collected, {errors} errors.")
 
-    # Close the browser now that scraping is done
+    # Close the browser
     if driver:
         try:
             driver.quit()
@@ -353,18 +400,14 @@ def main(max_pages: int = 5, max_categories: Optional[int] = None):
         print("[!] No data to save.")
         return
 
-    df = pd.DataFrame(all_books_data)
-    os.makedirs("output", exist_ok=True)
-    df.to_csv("output/books_raw.csv", index=False, encoding="utf-8-sig")
-    _save_assignment_json(df, "output/books_raw.json")
-    print(f"[*] Saved output/books_raw.csv  ({len(df)} rows)")
-    print(f"[*] Saved output/books_raw.json ({len(df)} records)")
+    # Final save
+    _save_progress(all_books_data)
 
     example_record = _strip_nulls(all_books_data[0])
     example_payload = {"records": {"record": [example_record]}}
     with open("output/books_example.json", "w", encoding="utf-8") as jf:
         json.dump(example_payload, jf, indent=2, ensure_ascii=False)
-    print("[*] Saved output/books_example.json")  # id & url always present, never stripped
+    print("[*] Saved output/books_example.json")
 
 
 def _strip_nulls(d: dict) -> dict:
