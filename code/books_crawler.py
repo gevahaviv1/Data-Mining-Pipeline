@@ -21,9 +21,11 @@ REQUEST_TIMEOUT = 20
 # Browser / Session helpers
 # ---------------------------------------------------------------------------
 
-def _create_session() -> Tuple[requests.Session, str]:
+def _create_session() -> Tuple[requests.Session, str, webdriver.Chrome]:
     """Launch a visible Chrome to solve the AWS WAF challenge, then
-    transfer the cookies to a lightweight requests.Session."""
+    transfer the cookies to a lightweight requests.Session.
+    Returns the session, the homepage HTML, and the still-open driver
+    (for screenshot capture later)."""
     print("[*] Launching browser to solve WAF challenge …")
     opts = Options()
     opts.add_argument("--disable-blink-features=AutomationControlled")
@@ -40,7 +42,6 @@ def _create_session() -> Tuple[requests.Session, str]:
     user_agent = driver.execute_script("return navigator.userAgent")
     cookies = {c["name"]: c["value"] for c in driver.get_cookies()}
     first_page_html = driver.page_source
-    driver.quit()
     print("[*] WAF challenge solved – cookies transferred to session.")
 
     session = requests.Session()
@@ -48,7 +49,7 @@ def _create_session() -> Tuple[requests.Session, str]:
     for k, v in cookies.items():
         session.cookies.set(k, v)
 
-    return session, first_page_html
+    return session, first_page_html, driver
 
 
 def _polite_get(session: requests.Session, url: str) -> Optional[str]:
@@ -299,7 +300,7 @@ def get_book_links_from_category(
 # ---------------------------------------------------------------------------
 
 def main(max_pages: int = 5, max_categories: Optional[int] = None):
-    session, first_page_html = _create_session()
+    session, first_page_html, driver = _create_session()
 
     categories = get_category_links(first_page_html)
     if not categories:
@@ -325,10 +326,27 @@ def main(max_pages: int = 5, max_categories: Optional[int] = None):
             try:
                 data = parse_book_page(html)
                 all_books_data.append(data)
+
+                # Capture screenshot of the first book page for the example
+                if len(all_books_data) == 1 and driver:
+                    try:
+                        driver.get(book_url)
+                        time.sleep(3)
+                        driver.save_screenshot("output/books_example.jpg")
+                        print("  [*] Screenshot saved: output/books_example.jpg")
+                    except Exception:
+                        pass
             except Exception as exc:
                 print(f"  [!] Parse error for {book_url}: {exc}")
 
     print(f"\n[*] Scraping complete – {len(all_books_data)} books collected.")
+
+    # Close the browser now that scraping is done
+    if driver:
+        try:
+            driver.quit()
+        except Exception:
+            pass
 
     if not all_books_data:
         print("[!] No data to save.")
@@ -341,9 +359,10 @@ def main(max_pages: int = 5, max_categories: Optional[int] = None):
     print(f"[*] Saved output/books_raw.csv  ({len(df)} rows)")
     print(f"[*] Saved output/books_raw.json ({len(df)} records)")
 
-    example = {k: v for k, v in all_books_data[0].items() if v is not None and v != ""}
+    example_record = _strip_nulls(all_books_data[0])
+    example_payload = {"records": {"record": [example_record]}}
     with open("output/books_example.json", "w", encoding="utf-8") as jf:
-        json.dump(example, jf, indent=2, ensure_ascii=False)
+        json.dump(example_payload, jf, indent=2, ensure_ascii=False)
     print("[*] Saved output/books_example.json")
 
 
